@@ -1,0 +1,39 @@
+# Document Extraction API Requirements
+
+# FastAPI and server
+fastapi>=0.104.0
+uvicorn>=0.24.0
+python-multipart>=0.0.6
+
+# Async support
+aiohttp>=3.9.0
+aiofiles>=23.2.0
+
+# Data processing
+pandas>=2.0.0
+openpyxl>=3.1.0  # For Excel support
+numpy>=1.24.0
+
+# Image processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+pytesseract>=0.3.10
+
+# Machine Learning (for Aadhaar pipeline)
+torch>=2.0.0
+ultralytics>=8.0.0  # YOLO
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+requests>=2.31.0
+
+# Note: Ensure Tesseract OCR is installed on your system
+# macOS: brew install tesseract
+# Ubuntu: sudo apt-get install tesseract-ocr
+# Also install language packs: tesseract-ocr-hin tesseract-ocr-tel tesseract-ocr-ben
+
+# Note: For Qwen fallback, ensure Ollama is installed and running
+# Install: curl -fsSL https://ollama.com/install.sh | sh
+# Pull model: ollama pull qwen2.5-vl:7b
+# Start server: ollama serve
